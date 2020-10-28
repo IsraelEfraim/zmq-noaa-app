@@ -3,14 +3,11 @@
 #include <string>
 #include "reading.hpp"
 
-auto main(int argc, char *argv[]) -> int
-{
-    if (argc == 1)
-    {
+auto main(int argc, char *argv[]) -> int {
+    if (argc == 1) {
         std::cout << "Usage: watcher <target_zone>" << std::endl;
     }
-    else
-    {
+    else {
         //  Socket to talk to client
         std::cout << "Collecting updates from weather server...\n"
                   << std::endl;
